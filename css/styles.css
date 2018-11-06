@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+html {
+  cursor: none;
+}
+
+html, body {
+  overflow: hidden;
+  font-family: LL-Riformal;
+}
+
+#title {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background: #aaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10.5vw;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.buttons {
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  position: absolute;
+  z-index: 1;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  padding: 40px;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0);
+  font-weight: 500;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: none;
+}
+
+.aboutBtn {
+  top: 0;
+  left: 0;
+}
+
+.albumsBtn {
+  top: 0;
+  right: 0;
+}
+
+.shopBtn {
+  bottom: 0;
+  left: 0;
+}
+
+.contactBtn {
+  bottom: 0;
+  right: 0;
+}
+
+#hover {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 90px;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
+}
+
+#cursor {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: white;
+  border-radius: 10px;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+/*# sourceMappingURL=styles.css.map */

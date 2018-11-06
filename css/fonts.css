@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'LL-Riformal';
+    src: url('../fonts/RiformaLLWeb-Regular.woff2') format('woff2');
+    font-weight: regular;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LL-Riformal';
+    src: url('../fonts/RiformaLLWeb-Regular.woff') format('woff');
+    font-weight: regular;
+    font-style: normal;
+}
