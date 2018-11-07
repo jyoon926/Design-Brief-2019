@@ -5,6 +5,7 @@
 }
 html {
     cursor: none;
+    font-size: 18px;
 }
 html, body {
     overflow: hidden;
@@ -20,7 +21,7 @@ html, body {
     justify-content: center;
     align-items: center;
     font-size: 10.5vw;
-    color: rgba(0,0,0,0.8);
+    color: #222;
 }
 .buttons {
     position: absolute;
@@ -28,10 +29,10 @@ html, body {
     height: 100vh;
     width: 100%;
 }
-a {
+.btn {
     position: absolute;
-    z-index: 1;
-    color: rgba(0,0,0,.8);
+    z-index: 2;
+    color: #222;
     text-decoration: none;
     padding: 40px;
     font-size: 1em;
@@ -47,6 +48,14 @@ a {
     top: 0;
     left: 0;
 }
+.homeBtn {
+    top: -98px;
+    left: 0;
+    color: #aaa;
+    &:hover {
+        color: white;
+    }
+}
 .albumsBtn {
     top: 0;
     right: 0;
@@ -60,22 +69,64 @@ a {
     right: 0;
 }
 
-#hover {
-    transition-duration: .3s;
+#hoverB {
+    transition-duration: .4s;
     position: absolute;
     height: 180px;
     width: 180px;
-    background: rgba(0, 0, 0, .8);
+    background: #222;
     border-radius: 90px;
     transform: scale(.2);
     transition-timing-function: cubic-bezier(0,0,.4,.94);
+    top: -110px;
+    z-index: -1;
+}
+#hoverW {
+    transition-duration: .5s;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    background: #aaa;
+    border-radius: 90px;
+    transform: scale(0);
+    transition-timing-function: cubic-bezier(0,0,.4,.94);
+    top: -110px;
+    z-index: -1;
 }
 #cursor {
     transition-duration: 0s;
+    top: -100px;
     position: absolute;
     height: 20px;
     width: 20px;
     background: white;
     border-radius: 10px;
     transform: scale(.4);
+}
+
+.page {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    transform: scale(0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: flex;
+    transition-duration: .4s;
+    z-index: -1;
+
+    h1 {
+        font-size: 10.5vw;
+        color: #aaa;
+    }
+    p {
+        margin-top: 30px;
+        font-size: 1.25em;
+        color: #aaa;
+        text-align: center;
+        width: 50%;
+        line-height: 1.5;
+    }
 }

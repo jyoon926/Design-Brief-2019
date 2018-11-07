@@ -8,17 +8,32 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body onload="everyTick()">
     <h1 id="title">George&Frederick</h1>
     <div class="buttons">
-        <a href="#" class="aboutBtn" onmouseover="hover()" onmouseout="out()">About</a>
-        <a href="#" class="albumsBtn" onmouseover="hover()" onmouseout="out()">Albums</a>
-        <a href="#" class="shopBtn" onmouseover="hover()" onmouseout="out()">Shop</a>
-        <a href="#" class="contactBtn" onmouseover="hover()" onmouseout="out()">Contact</a>
+        <a href="#" id="aboutBtn" class="aboutBtn btn" onmouseover="hover()" onmouseout="out()">About</a>
+        <a href="#" id="albumBtn" class="albumsBtn btn" onmouseover="hover()" onmouseout="out()">Albums</a>
+        <a href="#" id="shopBtn" class="shopBtn btn" onmouseover="hover()" onmouseout="out()">Shop</a>
+        <a href="#" id="contactBtn" class="contactBtn btn" onmouseover="hover()" onmouseout="out()">Contact</a>
     </div>
 
-    <div id="hover" class="hover"></div>
+    <div id="hoverB" class="hover"></div>
+    <div id="hoverW" class="hover"></div>
     <div id="cursor" class="cursor"></div>
+
+    <div id="about" class="page">
+        <h1>About</h1>
+        <p>Here, there should be a short paragraph describing George&Frederick and what they do. Information such as their sources of inspiration and style of music should be included in this section.</p>
+    </div>
+    <div id="album" class="page">
+        <h1>Albums</h1>
+    </div>
+    <div id="shop" class="page">
+        <h1>Shop</h1>
+    </div>
+    <div id="contact" class="page">
+        <h1>Contact</h1>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

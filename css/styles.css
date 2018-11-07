@@ -7,6 +7,7 @@
 
 html {
   cursor: none;
+  font-size: 18px;
 }
 
 html, body {
@@ -30,7 +31,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 10.5vw;
-  color: rgba(0, 0, 0, 0.8);
+  color: #222;
 }
 
 .buttons {
@@ -40,10 +41,10 @@ html, body {
   width: 100%;
 }
 
-a {
+.btn {
   position: absolute;
-  z-index: 1;
-  color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  color: #222;
   text-decoration: none;
   padding: 40px;
   font-size: 1em;
@@ -51,7 +52,7 @@ a {
   font-weight: 500;
 }
 
-a:hover {
+.btn:hover {
   color: rgba(255, 255, 255, 0.8);
   cursor: none;
 }
@@ -59,6 +60,16 @@ a:hover {
 .aboutBtn {
   top: 0;
   left: 0;
+}
+
+.homeBtn {
+  top: -98px;
+  left: 0;
+  color: #aaa;
+}
+
+.homeBtn:hover {
+  color: white;
 }
 
 .albumsBtn {
@@ -76,23 +87,42 @@ a:hover {
   right: 0;
 }
 
-#hover {
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+#hoverB {
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
   position: absolute;
   height: 180px;
   width: 180px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #222;
   border-radius: 90px;
   -webkit-transform: scale(0.2);
           transform: scale(0.2);
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
+  top: -110px;
+  z-index: -1;
+}
+
+#hoverW {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  background: #aaa;
+  border-radius: 90px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 0.94);
+  top: -110px;
+  z-index: -1;
 }
 
 #cursor {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
+  top: -100px;
   position: absolute;
   height: 20px;
   width: 20px;
@@ -100,5 +130,44 @@ a:hover {
   border-radius: 10px;
   -webkit-transform: scale(0.4);
           transform: scale(0.4);
+}
+
+.page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  z-index: -1;
+}
+
+.page h1 {
+  font-size: 10.5vw;
+  color: #aaa;
+}
+
+.page p {
+  margin-top: 30px;
+  font-size: 1.25em;
+  color: #aaa;
+  text-align: center;
+  width: 50%;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=styles.css.map */
