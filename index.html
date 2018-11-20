@@ -4,37 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>George&Frederick</title>
+    <title>Name</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body onload="everyTick()">
-    <h1 id="title">George&Frederick</h1>
-    <div class="buttons">
-        <a href="#" id="aboutBtn" class="aboutBtn btn" onmouseover="hover()" onmouseout="out()">About</a>
-        <a href="#" id="albumBtn" class="albumsBtn btn" onmouseover="hover()" onmouseout="out()">Albums</a>
-        <a href="#" id="shopBtn" class="shopBtn btn" onmouseover="hover()" onmouseout="out()">Shop</a>
-        <a href="#" id="contactBtn" class="contactBtn btn" onmouseover="hover()" onmouseout="out()">Contact</a>
+    <div id="cursorFollower"></div>
+    <div id="cursor"></div>
+
+    <div id="navbar">
+        <div id="line"></div>
+        <a href="index.html" class="logo">NAME</a>
+        <ul class="ul1">
+            <a href="#">Music</a>
+            <a href="#">Shows</a>
+            <a href="#">Store</a>
+            <a href="#">About</a>
+        </ul>
+        <a href="https://www.ihstsa.cf" target="none" class="chapter">Chapter Page</a>
     </div>
 
-    <div id="hoverB" class="hover"></div>
-    <div id="hoverW" class="hover"></div>
-    <div id="cursor" class="cursor"></div>
-
-    <div id="about" class="page">
-        <h1>About</h1>
-        <p>Here, there should be a short paragraph describing George&Frederick and what they do. Information such as their sources of inspiration and style of music should be included in this section.</p>
-    </div>
-    <div id="album" class="page">
-        <h1>Albums</h1>
-    </div>
-    <div id="shop" class="page">
-        <h1>Shop</h1>
-    </div>
-    <div id="contact" class="page">
-        <h1>Contact</h1>
+    <div id="lander">
+        <div class="text">
+            <h1>NAME</h1>
+            <a href="#albums">Listen to Name</a>
+        </div>
+        <img class="man" src="img/Man1.png" alt="">
     </div>
 
-    <script src="js/script.js"></script>
+    <div id="section1">
+        <p>Here, there should be a short paragraph describing Name on and what he/she does. Information such as his/her sources of inspiration and style of music should be included in this section. There should be a certain tone and style in the writing that brings the whole website together.</p>
+    </div>
+
+    <div id="albums"></div>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
