@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
 }
 
 ::-moz-selection {
@@ -361,7 +363,7 @@ body {
   z-index: -1;
   background: #3500d3;
   height: 61px;
-  width: 181px;
+  width: 200px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transition-duration: 0.4s;
@@ -408,7 +410,7 @@ body {
 }
 
 #section1 p {
-  width: 60%;
+  width: 650px;
   font-size: 1.3em;
   font-weight: 500;
   text-align: center;
@@ -538,7 +540,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 350px;
+  height: 320px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
