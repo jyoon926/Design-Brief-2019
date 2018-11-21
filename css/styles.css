@@ -494,7 +494,7 @@ body {
 
 .section2 .navigation .heading .text h4 {
   font-size: 1.5em;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -620,7 +620,7 @@ body {
   text-decoration: none;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .section2 .slidetrack .active:hover .albumInfo {
@@ -660,7 +660,7 @@ body {
 .section2 .discography {
   color: #3500d3;
   font-size: 2.5em;
-  border-bottom: 0px solid black;
+  border-bottom: 0px solid #111;
   padding-bottom: 4px;
   margin-top: 30px;
   -webkit-user-select: none;

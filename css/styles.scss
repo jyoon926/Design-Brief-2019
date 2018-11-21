@@ -334,7 +334,7 @@ body {
                 }
                 h4 {
                     font-size: 1.5em;
-                    font-weight: 200;
+                    font-weight: 300;
                     text-align: center;
                 }
             }
@@ -414,7 +414,7 @@ body {
                         padding-bottom: 1px;
                         text-decoration: none;
                         transition-duration: .3s;
-                        font-weight: 200;
+                        font-weight: 300;
                     }
                 }
             }
@@ -440,7 +440,7 @@ body {
     .discography {
         color: $accentBright;
         font-size: 2.5em;
-        border-bottom: 0px solid black;
+        border-bottom: 0px solid #111;
         padding-bottom: 4px;
         margin-top: 30px;
         user-select: none;
