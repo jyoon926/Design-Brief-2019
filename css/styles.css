@@ -22,7 +22,7 @@ html {
 
 html, body {
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins;
   color: white;
 }
 
@@ -278,8 +278,8 @@ body {
   position: absolute;
   z-index: -1;
   background: white;
-  height: 40px;
-  width: 132px;
+  height: 45px;
+  width: 143px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transition-duration: 0.4s;
@@ -362,8 +362,8 @@ body {
   position: absolute;
   z-index: -1;
   background: #3500d3;
-  height: 55px;
-  width: 170px;
+  height: 61px;
+  width: 181px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transition-duration: 0.4s;
@@ -488,13 +488,13 @@ body {
 
 .section2 .navigation .heading .text h3 {
   font-size: 2.5em;
-  font-weight: 100;
+  font-weight: 400;
   text-align: center;
 }
 
 .section2 .navigation .heading .text h4 {
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -592,7 +592,7 @@ body {
 }
 
 .section2 .slidetrack .album .albumInfo h3 {
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.7);
 }
