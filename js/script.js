@@ -3,16 +3,16 @@ $(document).ready(function(){
         $(window).scrollTop(0);
     });
 
-    var overlay = document.getElementById("overlay");
+    /*var overlay = document.getElementById("overlay");
     var body = document.getElementById("body");
     window.addEventListener('load', function(){
-        $('.bar').animate({ width: '100vw' }, 4000);
+        $('.bar').animate({ width: '100vw' }, 0);
         window.setTimeout(function () {
             overlay.style.opacity = '0';
             $('.loading').css("opacity", "0");
             overlay.style.zIndex = '-100'; 
-        }, 4000);
-    })
+        }, 0);
+    })*/
     //Smooth scrolling between links
     $("a").on('click', function(event) {
         if (this.hash !== "") {
