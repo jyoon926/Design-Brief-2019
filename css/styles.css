@@ -553,8 +553,8 @@ body {
 }
 
 .section2 .slidetrack .album {
-  height: 320px;
-  width: 320px;
+  height: 350px;
+  width: 350px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-filter: brightness(0.4);
@@ -651,8 +651,8 @@ body {
 }
 
 .section2 .slidetrack .albumempty {
-  height: 320px;
-  width: 320px;
+  height: 350px;
+  width: 350px;
   background: none;
   margin-right: 10px;
 }

@@ -48,7 +48,7 @@ $(document).ready(function(){
 		$('#album' + slideIndex).addClass('active');
 		$('.heading').removeClass('on');
 		$('#heading' + slideIndex).addClass('on');
-		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*660 + 'px');
+		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*720 + 'px');
 	}
 
 	function minusSlides(n) {
@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$('#album' + slideIndex).addClass('active');
 		$('.heading').removeClass('on');
 		$('#heading' + slideIndex).addClass('on');
-		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*660 + 'px');
+		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*720 + 'px');
 	}
 	
 	$('.next').click(plusSlides);
