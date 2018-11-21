@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
 }
 
 ::-moz-selection {
@@ -540,7 +538,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 320px;
+  height: 350px;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
