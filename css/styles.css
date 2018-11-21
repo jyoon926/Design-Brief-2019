@@ -363,7 +363,7 @@ body {
   z-index: -1;
   background: #3500d3;
   height: 61px;
-  width: 200px;
+  width: 230px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transition-duration: 0.4s;
