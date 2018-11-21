@@ -33,11 +33,35 @@ $(document).ready(function(){
 		var $win = $(window);
 		$win.on('scroll', function() {
 			var top1 = $win.scrollTop()/1.75;
-			var top2 = $win.scrollTop()/4;
+			var top2 = $win.scrollTop()/8;
 			$man.css('top', '-' + top1 + 'px');
-			$cross.css('margin-top', '-' + top2 + 'px');
+			$cross.css('margin-top', '' + top2 + 'px');
 		});
+    }
+    
+    //Albums
+	var slideIndex = 1;
+	
+	function plusSlides(n) {
+		slideIndex += 1;
+		$('.album').removeClass('active');
+		$('#album' + slideIndex).addClass('active');
+		$('.heading').removeClass('on');
+		$('#heading' + slideIndex).addClass('on');
+		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*660 + 'px');
 	}
+
+	function minusSlides(n) {
+		slideIndex += -1;
+		$('.album').removeClass('active');
+		$('#album' + slideIndex).addClass('active');
+		$('.heading').removeClass('on');
+		$('#heading' + slideIndex).addClass('on');
+		$('.slidetrack').css('margin-left', '-' + (slideIndex-1)*660 + 'px');
+	}
+	
+	$('.next').click(plusSlides);
+	$('.previous').click(minusSlides);
 });
 
 /*window.addEventListener('mousemove', cursor);

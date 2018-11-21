@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/Icon.png">
 </head>
 <body onload="everyTick()">
     <!--div class="se-pre-con" id="overlay">
@@ -23,6 +24,7 @@
     <div class="cross cross2"><div class="horizontal"></div><div class="vertical"></div></div>
     <div class="cross cross3"><div class="horizontal"></div><div class="vertical"></div></div>
     <div class="cross cross4"><div class="horizontal"></div><div class="vertical"></div></div>
+    <div class="cross cross5"><div class="horizontal"></div><div class="vertical"></div></div>
 
     <div id="navbar">
         <div id="line"></div>
@@ -44,11 +46,100 @@
         <img class="man" src="img/Man1.png" alt="">
     </div>
 
-    <div id="section1">
+    <section id="section1">
         <p>Here, there should be a short paragraph describing Name and what he/she does. Information such as his/her sources of inspiration and style of music should be included in this section. There should be a certain tone and style in the writing that brings the whole website together.</p>
-    </div>
+    </section>
 
-    <div id="albums"></div>
+    <section id="albums" class="section2">
+        <div class="navigation">
+            <div class="heading on" id="heading1">
+                <p class="arrow pre"><img src="img/arrowleft.png" alt=""></p>
+                <div class="text">
+                    <h3>Album 1</h3>
+                    <h4>2018</h4>
+                </div>
+                <a class="arrow next"><img src="img/arrowright.png" alt=""></a>
+            </div>
+            <div class="heading" id="heading2">
+                <a class="arrow previous"><img src="img/arrowleft.png" alt=""></a>
+                <div class="text">
+                    <h3>Album 2</h3>
+                    <h4>2017</h4>
+                </div>
+                <a class="arrow next"><img src="img/arrowright.png" alt=""></a>
+            </div>
+            <div class="heading" id="heading3">
+                <a class="arrow previous"><img src="img/arrowleft.png" alt=""></a>
+                <div class="text">
+                    <h3>Album 3</h3>
+                    <h4>2017</h4>
+                </div>
+                <p class="arrow next"><img src="img/arrowright.png" alt=""></p>
+            </div>
+            <div class="heading" id="heading4">
+                <a class="arrow previous"><img src="img/arrowleft.png" alt=""></a>
+                <div class="text">
+                    <h3>Album 4</h3>
+                    <h4>2016</h4>
+                </div>
+                <p class="arrow nex"><img src="img/arrowright.png" alt=""></p>
+            </div>
+        </div>
+        <div class="slidetrack">
+            <div class="albumempty" id="albumempty3"></div>
+            <div class="albumempty" id="albumempty3"></div>
+            <div class="albumempty" id="albumempty3"></div>
+            <div class="album active" id="album1" >
+                <div class="albumInfo" id="albumInfo1">
+                    <h3>Get this album on:</h3>
+                    <ul>
+                        <a href="#">Google Play</a>
+                        <a href="#">Spotify</a>
+                        <a href="#">Amazon</a>
+                        <a href="#">Soundcloud</a>
+                        <a href="#">iTunes</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="album" id="album2">
+                <div class="albumInfo" id="albumInfo1">
+                    <h3>Get this album on:</h3>
+                    <ul>
+                        <a href="#">Google Play</a>
+                        <a href="#">Spotify</a>
+                        <a href="#">Amazon</a>
+                        <a href="#">Soundcloud</a>
+                        <a href="#">iTunes</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="album" id="album3">
+                <div class="albumInfo" id="albumInfo1">
+                    <h3>Get this album on:</h3>
+                    <ul>
+                        <a href="#">Google Play</a>
+                        <a href="#">Spotify</a>
+                        <a href="#">Amazon</a>
+                        <a href="#">Soundcloud</a>
+                        <a href="#">iTunes</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="album" id="album4">
+                <div class="albumInfo" id="albumInfo1">
+                    <h3>Get this album on:</h3>
+                    <ul>
+                        <a href="#">Google Play</a>
+                        <a href="#">Spotify</a>
+                        <a href="#">Amazon</a>
+                        <a href="#">Soundcloud</a>
+                        <a href="#">iTunes</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="discography">complete discography <img class="arrowRight" src="img/arrowrightaccent.png" alt=""></a>
+    </section>
     
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     
