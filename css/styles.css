@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
 }
 
 ::-moz-selection {
@@ -17,13 +17,60 @@
 
 html {
   font-size: 18px;
-  background: #000;
+  background: #111;
 }
 
 html, body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   color: white;
+}
+
+body {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.se-pre-con {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background: #111;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.se-pre-con p {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 20vw;
+  font-weight: 600;
+  z-index: 2;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.se-pre-con .bar {
+  position: fixed;
+  height: 100vh;
+  width: 0;
+  z-index: 1;
+  background: #190061;
+  left: 0;
+  top: 0;
 }
 
 /*#cursor {
@@ -44,11 +91,66 @@ html, body {
     position: absolute;
     height: 30px;
     width: 30px;
-    border: 2px solid $red;
+    border: 2px solid $accentBright;
     border-radius: 17px;
     transition-timing-function: cubic-bezier(0,0,.4,1);
 }
 */
+.cross {
+  z-index: -1;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.cross .horizontal {
+  position: absolute;
+  height: 8px;
+  width: 28px;
+  background: #3500d3;
+  margin-top: 10px;
+}
+
+.cross .vertical {
+  position: absolute;
+  height: 48px;
+  width: 8px;
+  background: #3500d3;
+}
+
+.cross1 {
+  top: 80vh;
+  left: 30vw;
+}
+
+.cross2 {
+  top: 10vh;
+  left: 10vw;
+}
+
+.cross3 {
+  top: 30vh;
+  right: 5vw;
+}
+
+.cross4 {
+  top: 45vh;
+  left: 55vw;
+}
+
+.lineloaded {
+  width: 100vw;
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -75,6 +177,7 @@ html, body {
 #navbar #line {
   position: fixed;
   width: 100vw;
+  left: 0;
   height: 1px;
   background: rgba(255, 255, 255, 0.4);
   z-index: 50;
@@ -129,7 +232,7 @@ html, body {
 
 #navbar .ul1 a:before {
   content: "";
-  background: #fff;
+  background: #3500d3;
   height: 0;
   width: 80px;
   z-index: -1;
@@ -140,10 +243,6 @@ html, body {
 
 #navbar .ul1 a:hover:before {
   height: 40px;
-}
-
-#navbar .ul1 a:hover {
-  color: black;
 }
 
 #navbar .chapter {
@@ -237,7 +336,7 @@ html, body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 3px solid white;
+  border: 3px solid #3500d3;
   padding: 15px 28px;
   background: none;
   -webkit-transition-duration: .3s;
@@ -257,7 +356,7 @@ html, body {
   content: "";
   position: absolute;
   z-index: -1;
-  background: white;
+  background: #3500d3;
   height: 61px;
   width: 181px;
   -webkit-transform: scaleY(0);
@@ -272,7 +371,7 @@ html, body {
 }
 
 #lander .text a:hover {
-  color: black;
+  border-color: #3500d3;
 }
 
 #lander img {
@@ -287,13 +386,25 @@ html, body {
 }
 
 #section1 {
-  background: #222;
+  background: linear-gradient(20deg, #0C0032, #240090);
   padding: 150px 0;
   border-radius: 50px 50px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #section1 p {
-  margin: auto;
   width: 60%;
   font-size: 1.4em;
   font-weight: 500;

@@ -1,8 +1,10 @@
-$red: #cf0015;
+$accentBright: rgb(53, 0, 211);
+$accent: #240090;
+$accentDark: #0C0032;
 * {
     margin: 0;
     padding: 0;
-    transition-timing-function: ease-out;
+    transition-timing-function: cubic-bezier(0,0,.4,1);
 }
 ::selection {
     background: rgba(255,255,255,.5);
@@ -11,12 +13,44 @@ $red: #cf0015;
 html {
     //cursor: none;
     font-size: 18px;
-    background: #000;
+    background: #111;
 }
 html, body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+body {
+    transition-duration: 1s;
+}
+.se-pre-con {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    background: #111;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: .4s;
+    p {
+        color: rgba(255,255,255,.1);
+        font-size: 20vw;
+        font-weight: 600;
+        z-index: 2;
+        transition-duration: .5s;
+    }
+    .bar {
+        position: fixed;
+        height: 100vh;
+        width: 0;
+        z-index: 1;
+        background: #190061;
+        left: 0;
+        top: 0;
+    }
 }
 /*#cursor {
     z-index: 101;
@@ -36,11 +70,52 @@ html, body {
     position: absolute;
     height: 30px;
     width: 30px;
-    border: 2px solid $red;
+    border: 2px solid $accentBright;
     border-radius: 17px;
     transition-timing-function: cubic-bezier(0,0,.4,1);
 }
 */
+
+.cross {
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+    .horizontal {
+        position: absolute;
+        height: 8px;
+        width: 28px;
+        background: $accentBright;
+        margin-top: 10px;
+    }
+    .vertical {
+        position: absolute;
+        height: 48px;
+        width: 8px;
+        background: $accentBright;
+    }
+}
+.cross1 {
+    top: 80vh;
+    left: 30vw;
+}
+.cross2 {
+    top: 10vh;
+    left: 10vw;
+}
+.cross3 {
+    top: 30vh;
+    right: 5vw;
+}
+.cross4 {
+    top: 45vh;
+    left: 55vw;
+}
+.lineloaded {
+    width: 100vw;
+}
 #navbar {
     position: fixed;
     top: 0;
@@ -55,6 +130,7 @@ html, body {
     #line {
         position: fixed;
         width: 100vw;
+        left: 0;
         height: 1px;
         background: rgba(255,255,255,.4);
         z-index: 50;
@@ -89,7 +165,7 @@ html, body {
             
             &:before {
                 content: "";
-                background: #fff;
+                background: $accentBright;
                 height: 0;
                 width: 80px;
                 z-index: -1;
@@ -98,9 +174,6 @@ html, body {
             }
             &:hover:before {
                 height: 40px;
-            }
-            &:hover {
-                color: black;
             }
         }
     }
@@ -162,7 +235,7 @@ html, body {
             text-decoration: none;
             color: white;
             box-sizing: border-box;
-            border: 3px solid white;
+            border: 3px solid $accentBright;
             padding: 15px 28px;
             background: none;
             transition-duration: .3s;
@@ -174,7 +247,7 @@ html, body {
                 content: "";
                 position: absolute;
                 z-index: -1;
-                background: white;
+                background: $accentBright;
                 height: 61px;
                 width: 181px;
                 transform: scaleY(0);
@@ -184,7 +257,7 @@ html, body {
                 transform: scaleY(1);
             }
             &:hover {
-                color: black;
+                border-color: $accentBright;
             }
         }
     }
@@ -200,12 +273,15 @@ html, body {
 }
 
 #section1 {
-    background: #222;
+    background: linear-gradient(20deg, $accentDark, $accent);
     padding: 150px 0;
     border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     p {
-        margin: auto;
         width: 60%;
         font-size: 1.4em;
         font-weight: 500;
