@@ -333,6 +333,7 @@ body {
 #lander .text h1 {
   font-size: 8em;
   font-weight: 600;
+  text-shadow: 10px 10px 0px #3500d3;
 }
 
 #lander .text a {
@@ -452,7 +453,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
 }
 
 .section2 .navigation .heading {
@@ -588,7 +589,7 @@ body {
   opacity: 0;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .section2 .slidetrack .album .albumInfo h3 {
@@ -662,7 +663,7 @@ body {
   font-size: 2.5em;
   border-bottom: 0px solid #111;
   padding-bottom: 4px;
-  margin-top: 30px;
+  margin-top: 50px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
