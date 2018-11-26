@@ -331,9 +331,10 @@ body {
 }
 
 #lander .text h1 {
-  font-size: 8em;
+  font-size: 9em;
   font-weight: 600;
   text-shadow: 10px 10px 0px #3500d3;
+  font-family: 'IBM Plex Sans Condensed';
 }
 
 #lander .text a {
@@ -393,7 +394,7 @@ body {
 
 #section1 {
   background: linear-gradient(20deg, #240090, #3500d3);
-  padding: 120px 0;
+  padding: 130px 0;
   border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,6 +417,54 @@ body {
   font-weight: 500;
   text-align: center;
   line-height: 1.75;
+}
+
+#section1 a {
+  margin-top: 40px;
+  font-size: .9em;
+  text-decoration: none;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid white;
+  padding: 15px 0;
+  width: 310px;
+  background: none;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  font-weight: 500;
+}
+
+#section1 a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 61px;
+  width: 310px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+#section1 a:hover:before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+#section1 a:hover {
+  color: #240090;
 }
 
 .section2 {
