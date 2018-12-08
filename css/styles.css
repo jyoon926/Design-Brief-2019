@@ -18,7 +18,7 @@
 html {
   font-size: 18px;
   background: #000;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -26,6 +26,7 @@ body {
           transition-duration: 1s;
   font-family: Poppins;
   color: white;
+  overflow-x: hidden !important;
   overflow-y: hidden;
 }
 
