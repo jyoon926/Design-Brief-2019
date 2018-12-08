@@ -5,22 +5,25 @@ $accentDark: #0C0032;
     margin: 0;
     padding: 0;
     transition-timing-function: cubic-bezier(0,0,.4,1);
+
 }
 ::selection {
     background: rgba(255,255,255,.5);
     color: black;
 }
 html {
-    //cursor: none;
+    cursor: none !important;
     font-size: 18px;
     background: #000;
     overflow-x: hidden;
+    width: 100vw;
 }
 body {
     transition-duration: 1s;
     font-family: Poppins;
     color: white;
     overflow-y: hidden;
+    width: 100vw;
 }
 #overlay {
     position: fixed;
@@ -61,8 +64,8 @@ body {
         100% { transform: scale(3) rotate(0); }
     }
 }
-/*#cursor {
-    z-index: 101;
+#cursor {
+    z-index: 10000;
     transition-duration: 0s;
     top: -100px;
     position: absolute;
@@ -70,20 +73,24 @@ body {
     width: 8px;
     background: white;
     border-radius: 4px;
-    box-shadow: 0 3px 10px rgba(0,0,0,1);
+    box-shadow: 0 0px 10px rgba(0,0,0,1);
+    pointer-events: none;
 }
 #cursorFollower {
-    z-index: 100;
+    z-index: 10000;
     transition-duration: 0.5s;
     top: -100px;
     position: absolute;
     height: 30px;
     width: 30px;
-    border: 2px solid $accentBright;
+    border: 2px solid none;
+    background: $accent;
     border-radius: 17px;
     transition-timing-function: cubic-bezier(0,0,.4,1);
+    pointer-events: none;
+    //box-shadow: 0 0px 10px rgba(0,0,0,1);
 }
-*/
+
 
 .cross {
     z-index: -5;
@@ -132,7 +139,7 @@ body {
 #navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -226,11 +233,12 @@ body {
 
 #lander {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 
     .text {
         display: flex;

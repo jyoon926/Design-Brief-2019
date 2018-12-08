@@ -67,7 +67,7 @@ $(document).ready(function(){
 	$('.previous').click(minusSlides);
 });
 
-/*window.addEventListener('mousemove', cursor);
+window.addEventListener('mousemove', cursor);
 var $win = $(window);
 var _cursor = document.getElementById('cursor');
 var _cursorFollower = document.getElementById('cursorFollower');
@@ -80,9 +80,9 @@ function everyTick() {
 function cursor() {
     _cursor.style.top = event.clientY - 4 + $win.scrollTop() + "px";
 	_cursor.style.left = event.clientX - 4 + "px";
-    _cursorFollower.style.top = event.clientY - 17 + $win.scrollTop() + "px";
-	_cursorFollower.style.left = event.clientX - 17 + "px";
-}*/
+    _cursorFollower.style.top = event.clientY - 15 + $win.scrollTop() + "px";
+	_cursorFollower.style.left = event.clientX - 15 + "px";
+}
 
 window.onload = function load() {
 }

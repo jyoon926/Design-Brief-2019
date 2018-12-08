@@ -16,9 +16,11 @@
 }
 
 html {
+  cursor: none !important;
   font-size: 18px;
   background: #000;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
@@ -26,8 +28,8 @@ body {
           transition-duration: 1s;
   font-family: Poppins;
   color: white;
-  overflow-x: hidden !important;
   overflow-y: hidden;
+  width: 100vw;
 }
 
 #overlay {
@@ -114,29 +116,37 @@ body {
   }
 }
 
-/*#cursor {
-    z-index: 101;
-    transition-duration: 0s;
-    top: -100px;
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 3px 10px rgba(0,0,0,1);
+#cursor {
+  z-index: 10000;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  top: -100px;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0px 10px black;
+          box-shadow: 0 0px 10px black;
+  pointer-events: none;
 }
+
 #cursorFollower {
-    z-index: 100;
-    transition-duration: 0.5s;
-    top: -100px;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border: 2px solid $accentBright;
-    border-radius: 17px;
-    transition-timing-function: cubic-bezier(0,0,.4,1);
+  z-index: 10000;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  top: -100px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 2px solid none;
+  background: #320090;
+  border-radius: 17px;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+  pointer-events: none;
 }
-*/
+
 .cross {
   z-index: -5;
   position: fixed;
@@ -200,7 +210,7 @@ body {
 #navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +348,7 @@ body {
 
 #lander {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +362,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
 
 #lander .text {
