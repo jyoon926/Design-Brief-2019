@@ -124,7 +124,7 @@ body {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
   top: -100px;
-  position: absolute;
+  position: fixed;
   height: 8px;
   width: 8px;
   background: white;
@@ -139,7 +139,7 @@ body {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
   top: -100px;
-  position: absolute;
+  position: fixed;
   height: 30px;
   width: 30px;
   border: 2px solid none;
