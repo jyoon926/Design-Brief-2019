@@ -137,6 +137,9 @@ body {
 }
 
 #cursorFollower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 10000;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -151,6 +154,7 @@ body {
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
   pointer-events: none;
   opacity: .5;
+  transition-origin: center;
 }
 
 .cross {
