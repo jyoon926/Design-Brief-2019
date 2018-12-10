@@ -3,7 +3,9 @@
   padding: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+  overflow-x: hidden;
 }
+
 *:hover {
   cursor: none !important;
 }
@@ -19,11 +21,11 @@
 }
 
 html {
-  cursor: none !important;
   font-size: 18px;
   background: #000;
   overflow-x: hidden;
   width: 100vw;
+  cursor: none !important;
 }
 
 body {
@@ -31,6 +33,7 @@ body {
           transition-duration: 1s;
   font-family: Poppins;
   color: white;
+  overflow-x: hidden;
   overflow-y: hidden;
   width: 100vw;
 }
@@ -143,11 +146,12 @@ body {
   height: 30px;
   width: 30px;
   border: 2px solid none;
-  background: #320090;
+  background: white;
   border-radius: 17px;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
   pointer-events: none;
+  opacity: .5;
 }
 
 .cross {

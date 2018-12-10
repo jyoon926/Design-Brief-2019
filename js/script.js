@@ -77,11 +77,51 @@ function everyTick() {
     setTimeout(arguments.callee, 0);
 }
 
+function getX(event) //left position
+{
+    if(!event.pageX)
+    {
+        return event.clientX;
+    }
+        else
+    {
+        return event.pageX - (document.body.scrollLeft || document.documentElement.scrollLeft);
+    }
+}
+
+function getY(event) //top position
+{
+    if(event.pageY)
+    {
+        return event.pageY - (document.body.scrollTop || document.documentElement.scrollTop);
+    }
+        else
+    {
+        return event.clientY;
+    }
+}
+
+var offset = 15;
+
 function cursor() {
-    _cursor.style.top = event.clientY - 4 + $win.scrollTop() + "px";
-	_cursor.style.left = event.clientX - 4 + "px";
-    _cursorFollower.style.top = event.clientY - 15 + $win.scrollTop() + "px";
-	_cursorFollower.style.left = event.clientX - 15 + "px";
+    _cursor.style.top = getY(event) - 4 + "px";
+	_cursor.style.left = getX(event) - 4 + "px";
+    _cursorFollower.style.top = getY(event) - offset + "px";
+    _cursorFollower.style.left = getX(event) - offset + "px";
+}
+
+function hover() {
+    _cursorFollower.style.height = "60px";
+    _cursorFollower.style.width = "60px";
+    _cursorFollower.style.borderRadius = "60px";
+    offset = 30;
+}
+
+function hoverOut() {
+    _cursorFollower.style.height = "30px";
+    _cursorFollower.style.width = "30px";
+    _cursorFollower.style.borderRadius = "30px";
+    offset = 15;
 }
 
 window.onload = function load() {

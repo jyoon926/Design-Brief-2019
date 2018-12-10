@@ -1,27 +1,31 @@
 $accentBright: rgb(84, 0, 241);
-$accent: #320090;
+$accent: rgb(50, 0, 144);
 $accentDark: #0C0032;
 * {
     margin: 0;
     padding: 0;
     transition-timing-function: cubic-bezier(0,0,.4,1);
-
+    overflow-x: hidden;
+    &:hover {
+        cursor: none !important;
+    }
 }
 ::selection {
     background: rgba(255,255,255,.5);
     color: black;
 }
 html {
-    cursor: none !important;
     font-size: 18px;
     background: #000;
     overflow-x: hidden;
     width: 100vw;
+    cursor: none !important;
 }
 body {
     transition-duration: 1s;
     font-family: Poppins;
     color: white;
+    overflow-x: hidden;
     overflow-y: hidden;
     width: 100vw;
 }
@@ -68,7 +72,7 @@ body {
     z-index: 10000;
     transition-duration: 0s;
     top: -100px;
-    position: absolute;
+    position: fixed;
     height: 8px;
     width: 8px;
     background: white;
@@ -80,15 +84,16 @@ body {
     z-index: 10000;
     transition-duration: 0.5s;
     top: -100px;
-    position: absolute;
+    position: fixed;
     height: 30px;
     width: 30px;
     border: 2px solid none;
-    background: $accent;
+    background: white;
     border-radius: 17px;
     transition-timing-function: cubic-bezier(0,0,.4,1);
     pointer-events: none;
     //box-shadow: 0 0px 10px rgba(0,0,0,1);
+    opacity: .5;
 }
 
 
