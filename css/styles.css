@@ -4,6 +4,9 @@
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
 }
+*:hover {
+  cursor: none !important;
+}
 
 ::-moz-selection {
   background: rgba(255, 255, 255, 0.5);
