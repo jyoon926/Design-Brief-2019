@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-  overflow-x: hidden;
 }
 
 *:hover {
