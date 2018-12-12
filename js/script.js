@@ -112,7 +112,7 @@ function cursor() {
 }
 
 function hover() {
-    _cursorFollower.style.transform = "scale(1.5)";
+    _cursorFollower.style.transform = "scale(2)";
 }
 
 function hoverOut() {
