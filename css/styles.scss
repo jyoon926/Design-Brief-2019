@@ -5,9 +5,9 @@ $accentDark: #0C0032;
     margin: 0;
     padding: 0;
     transition-timing-function: cubic-bezier(0,0,.4,1);
-    &:hover {
-        cursor: none !important;
-    }
+}
+a {
+    cursor: none !important;
 }
 ::selection {
     background: rgba(255,255,255,.5);
@@ -81,7 +81,7 @@ body {
 }
 #cursorFollower {
     z-index: 10000;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
     top: -100px;
     position: fixed;
     height: 30px;
@@ -89,10 +89,11 @@ body {
     border: 2px solid none;
     background: white;
     border-radius: 17px;
-    transition-timing-function: cubic-bezier(0,0,.4,1);
+    transition-timing-function: ease-out;
     pointer-events: none;
     //box-shadow: 0 0px 10px rgba(0,0,0,1);
     opacity: .5;
+    transform: scale(1);
 }
 
 

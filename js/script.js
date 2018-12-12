@@ -75,6 +75,7 @@ var _cursorFollower = document.getElementById('cursorFollower');
 function everyTick() {
     cursor();
     setTimeout(arguments.callee, 0);
+    html.style.cursor = "none";
 }
 
 function getX(event) //left position
@@ -111,17 +112,11 @@ function cursor() {
 }
 
 function hover() {
-    _cursorFollower.style.height = "60px";
-    _cursorFollower.style.width = "60px";
-    _cursorFollower.style.borderRadius = "60px";
-    offset = 30;
+    _cursorFollower.style.transform = "scale(1.5)";
 }
 
 function hoverOut() {
-    _cursorFollower.style.height = "30px";
-    _cursorFollower.style.width = "30px";
-    _cursorFollower.style.borderRadius = "30px";
-    offset = 15;
+    _cursorFollower.style.transform = "scale(1)";
 }
 
 window.onload = function load() {

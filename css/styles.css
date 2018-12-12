@@ -5,7 +5,7 @@
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
 }
 
-*:hover {
+a {
   cursor: none !important;
 }
 
@@ -137,12 +137,9 @@ body {
 }
 
 #cursorFollower {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 10000;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   top: -100px;
   position: fixed;
   height: 30px;
@@ -150,11 +147,12 @@ body {
   border: 2px solid none;
   background: white;
   border-radius: 17px;
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   pointer-events: none;
   opacity: .5;
-  transition-origin: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .cross {
