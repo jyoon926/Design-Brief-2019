@@ -42,7 +42,7 @@ body {
   height: 100vh;
   width: 100vw;
   z-index: 1000;
-  background: #5400f1;
+  background: #bc162f;
   -webkit-transition-duration: 1.5s;
           transition-duration: 1.5s;
   -webkit-transition-timing-function: ease;
@@ -138,8 +138,8 @@ body {
 
 #cursorFollower {
   z-index: 10000;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   top: -100px;
   position: fixed;
   height: 30px;
@@ -175,7 +175,7 @@ body {
   position: absolute;
   height: 8px;
   width: 28px;
-  background: #5400f1;
+  background: #bc162f;
   margin-top: 10px;
 }
 
@@ -183,7 +183,7 @@ body {
   position: absolute;
   height: 48px;
   width: 8px;
-  background: #5400f1;
+  background: #bc162f;
 }
 
 .cross1 {
@@ -292,11 +292,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80px;
+  height: 40px;
 }
 
 #navbar .ul1 a:before {
   content: "";
-  background: #5400f1;
+  background: #bc162f;
   height: 0;
   width: 80px;
   z-index: -1;
@@ -393,7 +395,7 @@ body {
 #lander .text .title {
   font-size: 9em;
   font-weight: 600;
-  text-shadow: 10px 10px 0px #5400f1;
+  text-shadow: 10px 10px 0px #bc162f;
   font-family: 'Poppins';
   margin-left: -8px;
 }
@@ -404,7 +406,7 @@ body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 3px solid #5400f1;
+  border: 3px solid #bc162f;
   padding: 15px 28px;
   background: none;
   -webkit-transition-duration: .3s;
@@ -424,7 +426,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #5400f1;
+  background: #bc162f;
   height: 61px;
   width: 230px;
   -webkit-transform: scaleY(0);
@@ -439,7 +441,7 @@ body {
 }
 
 #lander .text a:hover {
-  border-color: #5400f1;
+  border-color: #bc162f;
 }
 
 #lander img {
@@ -454,7 +456,7 @@ body {
 }
 
 #section1 {
-  background: #5400f1;
+  background: #bc162f;
   padding: 130px 0;
   border-radius: 40px;
   display: -webkit-box;
@@ -635,7 +637,7 @@ body {
 
 .section2 .navigation .heading .arrow:hover {
   cursor: pointer;
-  color: #5400f1;
+  color: #bc162f;
 }
 
 .section2 .navigation .heading .pre:hover, .section2 .navigation .heading .nex:hover {
@@ -742,19 +744,19 @@ body {
 }
 
 .section2 .slidetrack #album1 {
-  background: #5400f1;
+  background: #bc162f;
 }
 
 .section2 .slidetrack #album2 {
-  background: #5400f1;
+  background: #bc162f;
 }
 
 .section2 .slidetrack #album3 {
-  background: #5400f1;
+  background: #bc162f;
 }
 
 .section2 .slidetrack #album4 {
-  background: #5400f1;
+  background: #bc162f;
 }
 
 .section2 .slidetrack #album2, .section2 .slidetrack #album3, .section2 .slidetrack #album4 {
@@ -769,7 +771,7 @@ body {
 }
 
 .section2 .discography {
-  color: #5400f1;
+  color: #bc162f;
   font-size: 2.5em;
   border-bottom: 0px solid #111;
   padding-bottom: 4px;
@@ -785,7 +787,7 @@ body {
 
 .section2 .discography:hover {
   margin-bottom: -3px;
-  border-bottom: 3px solid #5400f1;
+  border-bottom: 3px solid #bc162f;
 }
 
 .section2 .discography .arrowRight {
@@ -874,7 +876,7 @@ body {
 }
 
 #section3 .column .row .left .date {
-  color: #5400f1;
+  color: #bc162f;
   width: 100px;
 }
 
@@ -905,7 +907,7 @@ body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 3px solid #5400f1;
+  border: 3px solid #bc162f;
   padding: 12px 28px;
   background: none;
   -webkit-transition-duration: .3s;
@@ -926,7 +928,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #5400f1;
+  background: #bc162f;
   height: 50px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
@@ -940,7 +942,7 @@ body {
 }
 
 #section3 .column .row .right a:hover {
-  border-color: #5400f1;
+  border-color: #bc162f;
 }
 
 #section3 .column .row .right .vip:before {
@@ -957,7 +959,7 @@ body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 3px solid #5400f1;
+  border: 3px solid #bc162f;
   padding: 12px 28px;
   background: none;
   -webkit-transition-duration: .3s;
@@ -978,7 +980,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #5400f1;
+  background: #bc162f;
   height: 50px;
   width: 197px;
   -webkit-transform: scaleY(0);
@@ -993,6 +995,6 @@ body {
 }
 
 #section3 .moreDates:hover {
-  border-color: #5400f1;
+  border-color: #bc162f;
 }
 /*# sourceMappingURL=styles.css.map */

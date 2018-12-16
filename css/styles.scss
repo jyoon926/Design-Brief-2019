@@ -1,4 +1,4 @@
-$accentBright: rgb(84, 0, 241);
+$accentBright: rgb(188, 22, 47);
 $accent: rgb(50, 0, 144);
 $accentDark: #0C0032;
 * {
@@ -81,7 +81,7 @@ body {
 }
 #cursorFollower {
     z-index: 10000;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     top: -100px;
     position: fixed;
     height: 30px;
@@ -187,6 +187,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 80px;
+            height: 40px;
             
             &:before {
                 content: "";
