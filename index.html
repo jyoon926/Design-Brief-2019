@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="icon" href="img/IconAccent.png">
 </head>
 <body onload="everyTick()" id="body">
@@ -27,12 +28,26 @@
     <div id="navbar">
         <div id="line"></div>
         <a href="index.html" class="logo" id="logo" onmouseover="hover()" onmouseout="hoverOut()">DOOMSCAPE</a>
+		<input type="checkbox" id="checkbox" class="checkbox" id="checkbox">
         <ul class="ul1">
-            <a href="#" onmouseover="hover()" onmouseout="hoverOut()">MUSIC</a>
-            <a href="#" onmouseover="hover()" onmouseout="hoverOut()">SHOWS</a>
-            <a href="#" onmouseover="hover()" onmouseout="hoverOut()">STORE</a>
-            <a href="#" onmouseover="hover()" onmouseout="hoverOut()">ABOUT</a>
+            <a href="music.html" onmouseover="hover()" onmouseout="hoverOut()">MUSIC</a>
+            <a href="shows.html" onmouseover="hover()" onmouseout="hoverOut()">SHOWS</a>
+            <a href="store.html" onmouseover="hover()" onmouseout="hoverOut()">STORE</a>
+            <label for="checkbox" class="contactButton" onmouseover="hover()" onmouseout="hoverOut()">ABOUT</label>
         </ul>
+        <div class="contactPopup">
+			<label for="checkbox" class="contactX" onmouseover="hover()" onmouseout="hoverOut()">
+				<span class="one line"></span>
+				<span class="two line"></span>
+			</label>
+			<div class="contactXBg"></div>
+			<h5>Hello.</h5>
+			<h3>Contact me here.</h3>
+			<div class="contact">
+				<a href="mailto:doomscape@gmail.com" onmouseover="hover()" onmouseout="hoverOut()">Email</a>
+				<a href="tel:+1-123-456-7890" onmouseover="hover()" onmouseout="hoverOut()">Phone</a>
+			</div>
+		</div>
         <a href="https://www.ihstsa.cf" target="none" class="chapter" onmouseover="hover()" onmouseout="hoverOut()">Chapter Page</a>
     </div>
     <div id="bottom"></div>
@@ -139,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="discography" onmouseover="hover()" onmouseout="hoverOut()">complete discography <img class="arrowRight" src="img/arrowrightaccent.png" alt=""></a>
+        <a href="music.html" class="discography" onmouseover="hover()" onmouseout="hoverOut()">complete discography <img class="arrowRight" src="img/arrowrightaccent.png" alt=""></a>
     </section>
 
     <section id="section3">
@@ -195,7 +210,7 @@
             </div>
             <hr>
         </div>
-        <a href="#" class="moreDates" onmouseover="hover()" onmouseout="hoverOut()">View more dates</a>
+        <a href="shows.html" class="moreDates" onmouseover="hover()" onmouseout="hoverOut()">View more dates</a>
     </section>
     
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

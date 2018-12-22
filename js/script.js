@@ -11,7 +11,7 @@ $(document).ready(function(){
             overlay.style.opacity = '0';
             setTimeout(function () {
                 overlay.style.zIndex = '-100';
-                body.style.overflowY = 'scroll';
+                body.style.overflowY = 'auto';
             }, 400);
         }, 1600);
     })

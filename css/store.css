@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+}
+
+a {
+  cursor: none !important;
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+html {
+  font-size: 18px;
+  background: #000;
+  overflow-x: hidden;
+  width: 100vw;
+  cursor: none !important;
+}
+
+body {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-family: Poppins;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vw;
+}
+
+#overlay {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background: #bc162f;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+#overlay #cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(3) rotate(0);
+          transform: scale(3) rotate(0);
+  -webkit-animation: flip 1600ms linear;
+          animation: flip 1600ms linear;
+}
+
+#overlay #cross .horizontal {
+  background: black;
+  height: 8px;
+  width: 28px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+#overlay #cross .vertical {
+  background: black;
+  height: 48px;
+  width: 8px;
+  position: absolute;
+}
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: scale(3) rotate(180deg);
+            transform: scale(3) rotate(180deg);
+  }
+  25% {
+    -webkit-transform: scale(3) rotate(180deg);
+            transform: scale(3) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(3) rotate(0);
+            transform: scale(3) rotate(0);
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: scale(3) rotate(180deg);
+            transform: scale(3) rotate(180deg);
+  }
+  25% {
+    -webkit-transform: scale(3) rotate(180deg);
+            transform: scale(3) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: scale(3) rotate(0);
+            transform: scale(3) rotate(0);
+  }
+}
+
+#cursor {
+  z-index: 10000;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  top: -100px;
+  position: fixed;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0px 10px black;
+          box-shadow: 0 0px 10px black;
+  pointer-events: none;
+}
+
+#cursorFollower {
+  z-index: 10000;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  top: -100px;
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  border: 2px solid none;
+  background: white;
+  border-radius: 17px;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  pointer-events: none;
+  opacity: .5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cross {
+  z-index: -5;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.cross .horizontal {
+  position: absolute;
+  height: 8px;
+  width: 28px;
+  background: #bc162f;
+  margin-top: 10px;
+}
+
+.cross .vertical {
+  position: absolute;
+  height: 48px;
+  width: 8px;
+  background: #bc162f;
+}
+
+.cross1 {
+  top: 80vh;
+  left: 30vw;
+}
+
+.cross2 {
+  top: 10vh;
+  left: 10vw;
+}
+
+.cross3 {
+  top: 30vh;
+  right: 5vw;
+}
+
+.cross4 {
+  top: 45vh;
+  left: 55vw;
+}
+
+.cross5 {
+  top: 0vh;
+  left: 75vw;
+}
+
+.lineloaded {
+  width: 100vw;
+}
+
+#lander {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#lander .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#lander .text .title {
+  font-size: 9em;
+  font-weight: 600;
+  text-shadow: 10px 10px 0px #bc162f;
+  font-family: 'Poppins';
+  margin-left: -8px;
+}
+/*# sourceMappingURL=store.css.map */

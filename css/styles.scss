@@ -1,12 +1,8 @@
 $accentBright: rgb(188, 22, 47);
-$accent: rgb(50, 0, 144);
-$accentDark: #0C0032;
 * {
     margin: 0;
     padding: 0;
     transition-timing-function: cubic-bezier(0,0,.4,1);
-}
-a {
     cursor: none !important;
 }
 ::selection {
@@ -141,102 +137,6 @@ body {
 .lineloaded {
     width: 100vw;
 }
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    z-index: 50;
-    background: linear-gradient(black, rgba(0,0,0,0));
-    #line {
-        position: fixed;
-        width: 100vw;
-        left: 0;
-        height: 1px;
-        background: rgba(255,255,255,.4);
-        z-index: 50;
-    }
-    .logo {
-        position: fixed;
-        left: 30px;
-        font-size: 1.5em;
-        line-height: 1;
-        font-weight: 500;
-        z-index: 51;
-        color: white;
-        text-decoration: none;
-    }
-    .ul1 {
-        font-size: .8em;
-        font-weight: 300;
-        z-index: 51;
-        display: flex;
-        flex-direction: center;
-        justify-content: space-between;
-        align-items: center;
-        width: 350px;
-
-        a {
-            color: white;
-            text-decoration: none;
-            transition-duration: .4s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80px;
-            height: 40px;
-            
-            &:before {
-                content: "";
-                background: $accentBright;
-                height: 0;
-                width: 80px;
-                z-index: -1;
-                position: absolute;
-                transition-duration: .4s;
-            }
-            &:hover:before {
-                height: 40px;
-            }
-        }
-    }
-    .chapter {
-        font-size: .8em;
-        z-index: 51;
-        font-weight: 400;
-        position: fixed;
-        right: 17.5px;
-        padding: 10px 20px;
-        color: white;
-        text-decoration: none;
-        border: 2px solid white;
-        transition-duration: .4s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            background: white;
-            height: 45px;
-            width: 141px;
-            transform: scaleY(0);
-            transition-duration: 0.4s;
-        }
-        &:hover:before {
-            transform: scaleY(1);
-        }
-        &:hover {
-            color: black;
-        }
-    }
-}
 
 #lander {
     height: 100vh;
@@ -350,7 +250,7 @@ body {
             transform: scaleY(1);
         }
         &:hover {
-            color: $accent;
+            color: $accentBright;
         }
     }
 }
