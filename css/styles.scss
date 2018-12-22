@@ -279,7 +279,7 @@ body {
                 position: absolute;
                 z-index: -1;
                 background: $accentBright;
-                height: 61px;
+                height: 59px;
                 width: 230px;
                 transform: scaleY(0);
                 transition-duration: 0.4s;
@@ -441,6 +441,7 @@ body {
             z-index: 1;
             background-size: cover;
             background-repeat: no-repeat;
+            border-radius: 12px;
 
             .albumInfo {
                 color: white;
@@ -561,7 +562,8 @@ body {
                 align-items: center;
                 .date {
                     color: $accentBright;
-                    width: 100px;
+                    width: 120px;
+                    font-size: 1.25em;
                 }
                 .city {
                     width: 200px;

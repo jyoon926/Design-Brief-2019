@@ -427,7 +427,7 @@ body {
   position: absolute;
   z-index: -1;
   background: #bc162f;
-  height: 61px;
+  height: 59px;
   width: 230px;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
@@ -677,6 +677,7 @@ body {
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 12px;
 }
 
 .section2 .slidetrack .album .albumInfo {
@@ -877,7 +878,8 @@ body {
 
 #section3 .column .row .left .date {
   color: #bc162f;
-  width: 100px;
+  width: 120px;
+  font-size: 1.25em;
 }
 
 #section3 .column .row .left .city {
