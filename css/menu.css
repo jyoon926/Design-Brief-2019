@@ -102,10 +102,10 @@
 #navbar .contactPopup {
   z-index: 999;
   position: fixed;
-  width: calc(100vw - 200px);
-  height: calc(100vh - 200px);
-  top: 100px;
-  left: 100px;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  top: 25px;
+  left: 25px;
   background: #bc162f;
   border-radius: 14px;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
@@ -136,11 +136,24 @@
   font-size: 2em;
   font-weight: 400;
   margin-bottom: -20px;
+  text-align: center;
 }
 
 #navbar .contactPopup h3 {
+  text-align: center;
   font-size: 6em;
   font-weight: 500;
+  line-height: 1;
+  margin: 20px 0 40px 0;
+}
+
+@media screen and (max-width: 1100px) {
+  #navbar .contactPopup h5 {
+    font-size: 1.5em;
+  }
+  #navbar .contactPopup h3 {
+    font-size: 4em;
+  }
 }
 
 #navbar .contactPopup .contact {
