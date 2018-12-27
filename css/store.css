@@ -3,9 +3,6 @@
   padding: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-}
-
-a {
   cursor: none !important;
 }
 
@@ -213,6 +210,10 @@ body {
 
 .lineloaded {
   width: 100vw;
+}
+
+.ul1 {
+  width: 480px;
 }
 
 #lander {

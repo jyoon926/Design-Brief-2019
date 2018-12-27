@@ -1,12 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none !important;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
           transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-}
-
-a {
-  cursor: none !important;
 }
 
 ::-moz-selection {
@@ -213,6 +210,10 @@ body {
 
 .lineloaded {
   width: 100vw;
+}
+
+.ul1 {
+  width: 480px !important;
 }
 
 #lander {

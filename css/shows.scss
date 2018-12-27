@@ -4,10 +4,8 @@ $accentDark: #0C0032;
 * {
     margin: 0;
     padding: 0;
-    transition-timing-function: cubic-bezier(0,0,.4,1);
-}
-a {
     cursor: none !important;
+    transition-timing-function: cubic-bezier(0,0,.4,1);
 }
 ::selection {
     background: rgba(255,255,255,.5);
@@ -140,6 +138,9 @@ body {
 }
 .lineloaded {
     width: 100vw;
+}
+.ul1 {
+    width: 480px !important;
 }
 
 #lander {
