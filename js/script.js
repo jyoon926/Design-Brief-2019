@@ -75,7 +75,6 @@ var _cursorFollower = document.getElementById('cursorFollower');
 function everyTick() {
     cursor();
     setTimeout(arguments.callee, 0);
-    html.style.cursor = "none";
 }
 
 function getX(event) //left position
@@ -84,7 +83,7 @@ function getX(event) //left position
     {
         return event.clientX;
     }
-        else
+    else
     {
         return event.pageX - (document.body.scrollLeft || document.documentElement.scrollLeft);
     }
@@ -96,7 +95,7 @@ function getY(event) //top position
     {
         return event.pageY - (document.body.scrollTop || document.documentElement.scrollTop);
     }
-        else
+    else
     {
         return event.clientY;
     }
